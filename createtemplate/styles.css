@@ -1,0 +1,246 @@
+/* ======================================================
+   Base typography (editor + saved fragments)
+   ====================================================== */
+
+body {
+  font-family: "Source Serif 4", "Georgia", "Times New Roman", serif;
+  color: #111;
+}
+
+.editor,
+.saved-editor {
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+/* Headings inside the editor */
+.editor h1,
+.editor h2,
+.editor h3 {
+  font-family: "Source Serif 4", serif;
+  font-weight: 600;
+  margin: 1.2em 0 0.5em;
+}
+
+.editor h2 {
+  font-size: 1.25em;
+}
+
+/* ======================================================
+   Paragraph styles (auto-detected by editor)
+   Prefix: p-
+   ====================================================== */
+.p-header_liturgy {
+  display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: 0.5em 0.5em 0.5em 0.7em;
+    font-size: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;
+ 
+}
+.p-header_hymn {
+  display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: 0.5em 0.5em 0.5em 0.7em;
+    font-size: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #c5c5c5;
+    background: lightgreen;
+    font-weight: normal;
+    color: #454545;
+ 
+}
+.p-header_collect {
+  display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: 0.5em 0.5em 0.5em 0.7em;
+    font-size: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #c5c5c5;
+    background: lightblue;
+    font-weight: normal;
+    color: #454545;
+ }
+ .p-header_reading {
+  display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: 0.5em 0.5em 0.5em 0.7em;
+    font-size: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #c5c5c5;
+    background: yellow;
+    font-weight: normal;
+    color: #454545;
+ }
+  .p-header_sermon {
+  display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: 0.5em 0.5em 0.5em 0.7em;
+    font-size: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #c5c5c5;
+    background: blue;
+    font-weight: normal;
+    color: white;
+ }
+   .p-header_prayers {
+  display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: 0.5em 0.5em 0.5em 0.7em;
+    font-size: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #c5c5c5;
+    background: pink;
+    font-weight: normal;
+    color: black;
+ }
+    .p-header_notices {
+  display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: 0.5em 0.5em 0.5em 0.7em;
+    font-size: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #c5c5c5;
+    background: black;
+    font-weight: normal;
+    color: white;
+ }
+ 
+ /* Hanging indent base for speaker labels */
+.editor p.p-president,
+.editor p.p-response {
+  position: relative;
+  padding-left: 5.5em;   /* space for label */
+}
+
+ 
+ 
+
+/* Standard spoken text */
+.p-text {
+  margin-bottom: 0.8em;
+}
+
+/* President / leader text */
+.p-president {
+  font-weight: 600;
+}
+
+/* Congregational responses */
+.p-response {
+  font-weight: 600;
+}
+
+/* Rubrics / directions */
+.p-rubric {
+  font-style: italic;
+  color: #444;
+}
+
+/* Optional liturgical emphasis */
+.p-acclamation {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* Readings / scripture */
+.p-reading {
+  font-style: italic;
+}
+
+/* Notices or commentary */
+.p-notice {
+  font-size: 0.95em;
+}
+
+/* Quiet / prayerful text */
+.p-prayer {
+  margin-left: 1em;
+}
+
+/* ======================================================
+   Visual helpers (editor only – safe in saved fragments)
+   ====================================================== */
+
+.editor p {
+  margin: 0 0 10px;
+}
+
+/* Optional subtle guides while editing */
+.editor p.p-president::before {
+  content: "President:";
+  position: absolute;
+  left: 0;
+  width: 5em;
+  text-align: right;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.editor p.p-response::before {
+  content: "All:";
+  position: absolute;
+  left: 0;
+  width: 5em;
+  text-align: right;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+/* ======================================================
+   Print-friendly tweaks (optional)
+   ====================================================== */
+
+@media print {
+  body {
+    color: #000;
+  }
+
+  .editor {
+    border: none;
+    padding: 0;
+  }
+
+  .editor p {
+    break-inside: avoid;
+  }
+}

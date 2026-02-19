@@ -1,0 +1,19 @@
+# Database credentials
+config.php
+
+# Third-party tool (large, has its own versioning)
+phpmyadmin/
+
+# Runtime projection state files
+display/projectedtext.txt
+display/projectedposture.txt
+display/projectedfooter.txt
+display/projectedmusic.txt
+
+# PPT upload runtime directories
+pptupload/uploads/
+pptupload/generated_slides/
+pptupload/jobs/
+
+# Generated service templates
+created_templates/
